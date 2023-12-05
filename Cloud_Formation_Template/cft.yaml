@@ -1,0 +1,7 @@
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+       BucketName: 'nahid-demo-s3-bucket-example.com'
+       VersioningConfiguration:
+        Status: Enabled

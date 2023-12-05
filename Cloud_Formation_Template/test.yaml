@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.medium
+      ImageId: ami-0fc5d935ebf8bc3bc # Replace with your desired AMI ID
+      KeyName: cft-key # Replace with your key pair name
+      SecurityGroupIds:
+        - sg-0c78bf63ba4a1a80b # Replace with your security group ID
+      SubnetId: subnet-007e37e8a4ce72f00 # Replace with your subnet ID
+      Tags:
+        - Key: Name
+          Value: ec2-cft-instance # Replace with your desired instance name
